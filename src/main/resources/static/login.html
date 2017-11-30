@@ -5,23 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-<script
-        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <body>
 
 
 <script>
     function login() {
-        var userName=$("#userNameInput").val;
+        var userName = $("#userNameInput").val;
         $.ajax({
-            url:"/login",
-            type:"post",
-            data:{
-                userName:userName
+            url: "/login",
+            type: "post",
+            data: {
+                userName: userName
             },
-            success:function (data) {
+            success: function (data) {
                 alert(data);
 
             }
